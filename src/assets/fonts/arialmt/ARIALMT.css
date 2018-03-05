@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "ArialMT";
+    src: url("ARIALMT.eot");
+    src: url("ARIALMT.eot?#iefix") format("embedded-opentype"),
+         url("ARIALMT.woff2") format("woff2"),
+         url("ARIALMT.woff") format("woff"),
+         url("ARIALMT.ttf") format("ttf"),
+         url("ARIALMT.svg#ArialMT") format("svg");
+    font-style: normal;
+    font-weight: normal;
+}
