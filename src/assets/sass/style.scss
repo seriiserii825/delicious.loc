@@ -2,4 +2,95 @@
 @import "partials/iconmoon";
 @import "../sass/partials/_start.scss";
 
+.main {
+  background: $bg-maroon;
 
+  .features {
+    padding: 60px 0;
+
+    &__item {
+      position: relative;
+      margin: 0 20px;
+      padding: 80px 20px 40px;
+      min-height: 264px;
+      background: #f6dbac;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    }
+
+    &__header {
+      position: absolute;
+      top: 10px;
+      left: -10px;
+      padding-left: 40px;
+      width: 105%;
+      height: 42px;
+      background: $red-color;
+      z-index: 2;
+
+      .icon {
+        position: absolute;
+        top: -20px;
+        right: 20px;
+        width: 60px;
+        height: 70px;
+        background: url("../i/cake-1.png") no-repeat;
+
+        &.two {
+          top: -26px;
+          background: url("../i/cake-2.png") no-repeat;
+        }
+
+        &.three {
+          background: url("../i/cake-3.png") no-repeat;
+        }
+      }
+
+      &-icon {
+        position: absolute;
+        top: 10px;
+        width: 47px;
+        height: 38px;
+        background: url("../i/features-header-icon.png") no-repeat;
+        z-index: 1;
+      }
+
+      &-icon-left {
+        left: -30px;
+      }
+
+      &-icon-right {
+        top: 14px;
+        right: -26px;
+        transform: rotate(180deg);
+      }
+    }
+
+
+    &__title {
+      @include lobster;
+      font-size: 26px;
+      font-weight: normal;
+      line-height: 42px;
+      color: #f6dbac;
+    }
+  }
+}
+
+.footer-main {
+  height: 34px;
+  background: #ffcdcd;
+
+  .copyright {
+    line-height: 34px;
+  }
+
+  .footer-menu {
+    line-height: 34px;
+    text-align: right;
+
+    &__item {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}
